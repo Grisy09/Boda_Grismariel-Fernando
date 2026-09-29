@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grismariel & Fernando</title>
+
+<meta property="og:title" content="Grismariel & Fernando 💍">
+<meta property="og:description" content="Te invitamos a celebrar nuestro matrimonio.">
+<meta property="og:type" content="website">
+
+<meta property="og:image"
+content="AQUI_VA_LA_URL_DEL_SOBRE">
+
+<style>
+
+body{
+font-family:Georgia,serif;
+background:#f8f5ef;
+text-align:center;
+margin:0;
+padding:20px;
+}
+
+img{
+max-width:100%;
+border-radius:15px;
+}
+
+.contador{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin:25px 0;
+}
+
+.box{
+background:white;
+padding:12px;
+border-radius:10px;
+border:1px solid #d4b06a;
+min-width:80px;
+}
+
+.numero{
+font-size:28px;
+font-weight:bold;
+color:#b08d57;
+}
+
+.btn{
+display:inline-block;
+padding:14px 22px;
+margin:10px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.mapa{
+background:#355e3b;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img src="AQUI_VA_LA_URL_DE_LON
+
+<h2>Faltan para nuestro gran día 💍</h2>
+
+<div class="contador" id="contador"></div>
+
+<a class="btn mapa"
+href="https://maps.app.goo.gl/Nhbetzu7NrWW2R9v9?g_st=ac"
+target="_blank">
+
+📍 Ver ubicación
+
+wa.me/19394021864?text=Hola%20Grismariel%20y%20Fernando,%20confirmo%20mi%20asistencia."
+target="_blank">
+
+✅ Confirmar asistencia
+
+</a>
+
+<script>
+
+const boda = new Date('202 ahora = new Date();
+
+let diferencia = boda - ahora;
+
+let dias = Math.floor(diferencia/(1000*60*60*24));
+let horas = Math.floor((diferencia/(1000*60*60))%24);
+let minutos = Math.floor((diferencia/(1000*60))%60);
+let segundos = Math.floor((diferencia/1000)%60);
+
+document.getElementById("contador").innerHTML =
+
+`
+<div class="box">
+<div class="numero">${dias}</div>
+Días
+</div>
+
+<div class="box">
+<div class="numero">${horas}</div>
+Horas
+</div>
+
+<div class="box">
+<div class="numero">${minutos}</div>
+Minutos
+</div>
+
+<div class="box">
+<div class="numero">${segundos}</div>
+Segundos
+</div>
+`;
+
+}
+
+actualizar();
+setInterval(actualizar,1000);
+
+</script>
+
+</body>
+</html>
